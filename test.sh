@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ROOT=/c/users/yamen/documents/yamenz.github.io/lectures
-HTTP="/"
+HTTP="/lectures/"
 OUTPUT="index.html" 
 
 i=0
