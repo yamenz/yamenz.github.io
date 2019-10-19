@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ROOT=/c/users/yamen/documents/yamenz.github.io/lectures
-HTTP="/lectures/"
+HTTP="/"
 OUTPUT="index.html" 
 
 i=0
@@ -12,7 +12,7 @@ for filepath in `find "$ROOT" -maxdepth 5 -mindepth 1 -type d| sort`; do
   echo "  <UL>" >> $OUTPUT
   for i in `find "$filepath" -maxdepth 5 -mindepth 1 -type f| sort`; do
     file=`basename "$i"`
-    echo "    <LI><a href=\"/$path/$file\">$file</a></LI>" >> $OUTPUT
+    echo "    <LI><a href=\"lectures/$path/$file\">$file</a></LI>" >> $OUTPUT
   done
   echo "  </UL>" >> $OUTPUT
 done
